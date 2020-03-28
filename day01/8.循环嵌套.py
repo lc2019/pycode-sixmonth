@@ -23,3 +23,4 @@ while j<9:
         i += 1
         print(i,'*',j,'=',(j*i),sep='',end="\t")
     print()
+
