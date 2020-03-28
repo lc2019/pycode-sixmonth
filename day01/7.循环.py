@@ -33,3 +33,9 @@ for i in range(1,5):
     if i ==3:
         continue
     print(i)
+
+while True:
+    username = input("用户名：")
+    password = input('mima:')
+    if username =='zhangsan' and password =='123':
+        break
