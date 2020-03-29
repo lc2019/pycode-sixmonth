@@ -1,0 +1,12 @@
+双shift 弹出全局搜索 ctrl+shift+a
+关闭 double,click.handler
+
+快速格式化代码
+ctrl+alt+l
+
+快速复制粘贴
+ctrl+d
+
+快速移动代码
+ctrl+shift+up/down
+
