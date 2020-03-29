@@ -23,3 +23,13 @@ print(names)
 #查询
 print(names.index('lisi')) #下标
 print('wangwu' in names) #bool
+
+#列表的遍历 while/ for  in
+i = 0
+while i < len(names):
+    print(names[i])
+    i+=1
+
+#for
+for i in names:
+    print(i)
