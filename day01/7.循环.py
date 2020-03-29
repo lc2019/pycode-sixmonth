@@ -34,8 +34,22 @@ for i in range(1,5):
         continue
     print(i)
 
-while True:
-    username = input("用户名：")
-    password = input('mima:')
-    if username =='zhangsan' and password =='123':
+# while True:
+#     username = input("用户名：")
+#     password = input('mima:')
+#     if username =='zhangsan' and password =='123':
+#         break
+
+#while
+num = 0
+total = 0
+count = 0
+while num != 'pc':
+    total += int(num) #先执行
+    num = input('enter a num:')
+    if num == 'pc': #不计算次数
         break
+    count += 1
+print(total/count)
+
+
