@@ -15,3 +15,8 @@ print(t)
 
 filename = '2020.03.28-x.mp4'
 print(filename.rpartition('.'))
+
+#join
+print('-'.join(s1))
+print(('*'.join('hello')))
+print('+'.join(('yes','ok')))
