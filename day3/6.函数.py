@@ -25,3 +25,28 @@ def add(a, b):
 
 res = add(1, 2)
 print(res)
+
+
+# 对函数进行说明
+def test(a, b):
+    """
+    这是1个相加的函数
+    :param a:  第一个数
+    :param b:  第2个数
+    :return: 返回值
+    """
+    return a + b
+
+
+help(test)
+
+
+def test2(a, b):
+    x = a // b
+    y = a % b
+    return x, y
+
+
+# res,re2 = test2(13, 5)
+res = test2(13, 5)
+print(res[0], res[1])
