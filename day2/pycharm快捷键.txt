@@ -10,3 +10,4 @@ ctrl+d
 快速移动代码
 ctrl+shift+up/down
 
+合并到当前版本 git
