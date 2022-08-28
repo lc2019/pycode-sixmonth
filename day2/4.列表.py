@@ -20,16 +20,16 @@ print(names.pop(2))  # 删除指定下标的数据
 print(names.remove(29))  # None 删除成功返回
 print(names)
 
-#查询
-print(names.index('lisi')) #下标
-print('wangwu' in names) #bool
+# 查询
+print(names.index('lisi'))  # 下标
+print('wangwu' in names)  # bool
 
-#列表的遍历 while/ for  in
+# 列表的遍历 while/ for  in
 i = 0
 while i < len(names):
     print(names[i])
-    i+=1
+    i += 1
 
-#for
+# for
 for i in names:
     print(i)

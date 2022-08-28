@@ -21,9 +21,6 @@ for k, v in per.items():
     print(k, v)
 
 # 获取所有的key
-for k in per:
-    print(per[k])
-
 for k in per.keys():
     print(k)
 

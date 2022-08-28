@@ -21,18 +21,18 @@ for k, v in d1.items():
 # 2.让用户输入姓名 如果存在提示，不存在添加 继续输入年龄
 name = input('enter a name:')
 # 列表嵌套字典
-per = [{'name':'leichao','age': 18},{'name': 'lulu','age': 19}]
+per = [{'name': 'leichao', 'age': 18}, {'name': 'lulu', 'age': 19}]
 for p in per:
     if p['name'] == name:
         print('cunz')
         break
     else:
         p['name'] = name
-        age = input('enter age')
+        age = int(input('enter age:'))
         p['age'] = age
-        #创建新的列表 加入到原来的列表里面
-        newp = {'name':name}
-        newp = {'age':age}
+        # 创建新的列表 加入到原来的列表里面
+        newp = {'name': name}
+        newp = {'age': age}
         per.append(newp)
         break
 print(per)

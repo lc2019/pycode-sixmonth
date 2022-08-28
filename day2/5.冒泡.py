@@ -1,17 +1,17 @@
-num = [6,5,3,1,8,7,2,4]
+num = [6, 5, 3, 1, 8, 7, 2, 4]
 i = 0
-while i < len(num) -1:
+while i < len(num) - 1:
     n = 0
     flag = True
     # 比较过的不需要再次进行比较
-    while n < len(num) -1 -i:
-        if num[n] > num[n+1]:
+    while n < len(num) - 1 - i:
+        if num[n] > num[n + 1]:
             flag = False
-            num[n],num[n+1] = num[n+1],num[n]
-        n+=1
-    if flag: #如果顺序全是对的
+            num[n], num[n + 1] = num[n + 1], num[n]
+        n += 1
+    if flag:  # 如果顺序全是对的
         break
-    i+=1
+    i += 1
 print(num)
 
 # num.sort() #排序
