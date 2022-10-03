@@ -8,11 +8,13 @@
 # num2 = eval(input("enter a num:"))
 # print(num1+num2)
 
-#内置类转换
+# 内置类转换
 a = '31'
 b = int(a)
-print(a,b)
+print(a, b)
 
 x = 'hello'
 y = int(x)
 print(y)
+
+# 格式化输出

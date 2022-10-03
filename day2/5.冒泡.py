@@ -14,10 +14,11 @@ while i < len(num) - 1:
     i += 1
 print(num)
 
-# num.sort() #排序
-# num.sort(reverse=True) #逆序
-# print(num)
+num = [6, 5, 3, 1, 8, 7, 2, 4]
+num.sort()  # 排序
+num.sort(reverse=True)  # 逆序
+print(num)
 #
 # # 生成一个新的列表
-# x = sorted(num)
-# print(x)
+x = sorted(num)
+print(x)

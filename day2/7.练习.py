@@ -30,7 +30,7 @@ while i < len(nums) - 1:
 print(index, y)
 
 # 删除空的字符串
-x = ['heall', '', '', 'world', 'yes', 'ok']
+x = ['hello', '', '', 'world', 'yes', 'ok']
 word = []  # 添加到新的列表
 for w in x:  # 在使用for循环的时候不用对元素进行增删操作,下标会发生越界
     if w != '':
@@ -50,5 +50,5 @@ print(rooms)
 for i, room in enumerate(rooms):
     print('房间%d里一共多少%d个老师' % (i, len(room)))
     for t in room:
-        print(t,end='\t')
+        print(t, end='\t')
     print()

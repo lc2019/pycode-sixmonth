@@ -28,7 +28,7 @@ for p in per:
         break
     else:
         p['name'] = name
-        age = int(input('enter age:'))
+        age = input('enter age')
         p['age'] = age
         # 创建新的列表 加入到原来的列表里面
         newp = {'name': name}
