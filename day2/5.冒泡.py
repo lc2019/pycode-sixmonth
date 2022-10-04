@@ -22,3 +22,7 @@ print(num)
 # # 生成一个新的列表
 x = sorted(num)
 print(x)
+
+# 直接讲列表倒叙
+num.reverse()
+print(num)
