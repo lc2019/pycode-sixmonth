@@ -11,9 +11,7 @@ print(per.get('leichao1'))  # 如果没有返回None
 # 添加,不存在直接添加
 per['goon'] = 2020
 print(per)
-# 更新字典
-hope={'2022':'goon'}
-per.update(hope)
+
 
 # 删除 随机
 print(per.pop('2020'))
@@ -22,15 +20,15 @@ del per['lulu']
 # 遍历 ,获取所有的键值对
 for k, v in per.items():
     print(k, v)
-
+print('--------------')
 # 获取所有的key
 for k in per.keys():
     print(k)
-
+print('--------------')
 # 获取所有的值
 for v in per.values():
     print(v)
-
+print('--------------')
 # 字典的合并
 addr = {'hubei': 'tianmen'}
 per.update(addr)

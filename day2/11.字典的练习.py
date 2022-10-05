@@ -23,16 +23,15 @@ name = input('enter a name:')
 # 列表嵌套字典
 per = [{'name': 'leichao', 'age': 18}, {'name': 'lulu', 'age': 19}]
 for p in per:
+    print(p)
+    print(p['name'])
     if p['name'] == name:
-        print('cunz')
+        print('exist')
         break
     else:
-        p['name'] = name
         age = int(input('enter age:'))
-        p['age'] = age
         # 创建新的列表 加入到原来的列表里面
-        newp = {'name': name}
-        newp = {'age': age}
+        newp = {'name': name,'age': age}
         per.append(newp)
         break
 print(per)
