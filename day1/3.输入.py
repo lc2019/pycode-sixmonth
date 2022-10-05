@@ -10,11 +10,28 @@
 
 # 内置类转换
 a = '31'
-b = int(a)
-print(a, b)
+b = int(a)  # 将字符转为数字 '31'
+print(a, b, type(a), type(b))
 
-x = 'hello'
-y = int(x)
-print(y)
+# x = 'hello'
+# y = int(x)
+# print(y)
 
-# 格式化输出
+c = '3.14'
+d = '3.145'
+print(float(c))
+print(float(c) + float(d))
+
+# 运算符 + - *  / % //
+*x, y, z = 1, 2, 3, 4, 5
+print(x, y, z, sep='-----')
+
+# 值交换
+e = 4
+f = 5
+e, f = f, e
+print(e, f)
+
+# 逻辑运算符 and or not
+
+

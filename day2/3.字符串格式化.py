@@ -12,12 +12,12 @@ print('my name is %s age is %d' % (name, age))
 x = '大家好，我是{},年龄{}'.format('zhangsan', 18)
 print(x)
 
-# 3 列表
+# 3 列表 *
 y = ['zhangsan', 18]
 b = '大家好，我是{},年龄{}'.format(*y)
 print(b)
 
-# 4 字典
+# 4 字典 **
 z = {'name': 'zhangsan', 'age': 18}
 c = '大家好，我是{name},年龄{age}'.format(**z)
 print(c)

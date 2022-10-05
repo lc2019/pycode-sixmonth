@@ -8,12 +8,17 @@ word = 'hello'
 x = input("enter a c:")
 for c in word:
     if x == c:
-        print("cunz")
+        print("exist")
         break
 else:
-    print('bucunz')
+    print('not exist')
 
 if x in word:
-    print("cunz")
+    print("exist")
 else:
-    print('bu cunz')
+    print('not exist')
+
+if word.find(x) == -1:
+    print("not exist")
+else:
+    print("exist")
