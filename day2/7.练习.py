@@ -15,19 +15,19 @@ nums = [3, 1, 9, 8, 0, 7]
 nums.sort()
 print(nums[-1])
 
-y = -1
-for x in nums:
-    if x > y:
-        y = x
+m_max = nums[0]
+m_min = nums[0]
+max_index = 0
+min_index = 0
 
-i = 0
-index = 0
-while i < len(nums) - 1:
-    if nums[i] > y:
-        y = nums[i]
-        index = i
-    i += 1
-print(index, y)
+for i, j in enumerate(nums):
+    if j > m_max:
+        m_max = j
+        max_index = i
+    if j < m_min:
+        m_min = j
+        min_index = i
+print(f'最大的数是{m_max},下标是{max_index}，最小的数是{m_min},下标是{min_index}')
 
 # 删除空的字符串
 x = ['heall', '', '', 'world', 'yes', 'ok']
@@ -50,5 +50,5 @@ print(rooms)
 for i, room in enumerate(rooms):
     print('房间%d里一共多少%d个老师' % (i, len(room)))
     for t in room:
-        print(t,end='\t')
+        print(t, end='\t')
     print()

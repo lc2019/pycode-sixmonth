@@ -11,6 +11,9 @@ print(per.get('leichao1'))  # 如果没有返回None
 # 添加,不存在直接添加
 per['goon'] = 2020
 print(per)
+# 更新字典
+hope={'2022':'goon'}
+per.update(hope)
 
 # 删除 随机
 print(per.pop('2020'))
