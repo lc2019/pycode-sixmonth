@@ -1,11 +1,12 @@
 # 1.统计字符出现的次数
 x = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'c', 'a']
 d1 = {}
-for c in x:
-    if c in d1:
-        d1[c] += 1
-    else:
-        d1[c] = 1
+for c in set(x):
+    # if c in d1:
+    #     d1[c] += 1
+    # else:
+    #     d1[c] = 1
+    d1[c]=x.count(c)
 print(d1)
 # 取值
 vs = d1.values()
@@ -35,3 +36,11 @@ for p in per:
         per.append(newp)
         break
 print(per)
+
+
+x = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'c', 'a']
+new_x=[]
+for i in x:
+    if i not in new_x:
+        new_x.append(i)
+print(new_x)
