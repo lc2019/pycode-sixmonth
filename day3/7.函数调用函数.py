@@ -61,3 +61,16 @@ def test3():
 
 
 test3()
+
+# 位置参数 默认参数在args后 可变关键字参数
+def foo(a,b,*args,start=5,**kwargs):
+    sum=a+b+start
+    # 直接遍历的是key  kwargs是字典
+    # for k in kwargs:
+    #     sum+=kwargs[k]
+
+    for arg in args + tuple(kwargs.values()):
+        sum+=arg
+    print(sum)
+
+foo(4,5,start=5,c=10,d=20)
