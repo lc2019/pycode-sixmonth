@@ -4,7 +4,7 @@ import time
 def js():
     x = 0
     for i in range(1, 100000):
-        x += 1
+        x += i
 
 
 # 程序花费时间函数
