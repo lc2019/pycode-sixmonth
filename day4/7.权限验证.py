@@ -7,10 +7,10 @@ EXEC_PER = 1
 user_per = 3
 
 
-def check_per(base_per):
-    def hand_action(fn):
+def check_per(base_per):  # 装饰器参数
+    def hand_action(fn):  # 传递函数
         # 扩展功能
-        def do_action():
+        def do_action():  # 装饰函数
             if user_per & base_per != 0:
                 fn()
             else:

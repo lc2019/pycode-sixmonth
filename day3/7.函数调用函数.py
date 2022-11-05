@@ -57,20 +57,22 @@ def test3():
     a = 20
     print("修改全局变量 a = {}".format(a))
 
-    print(locals(), globals())
+    # print(locals(), globals())
 
 
 test3()
 
-# 位置参数 默认参数在args后 可变关键字参数
-def foo(a,b,*args,start=5,**kwargs):
-    sum=a+b+start
-    # 直接遍历的是key  kwargs是字典
+
+# 位置参数 默认参数在args后 可变关键字参数**kwargs
+def foo(a, b, *args, start=5, **kwargs):
+    sum = a + b + start
+    # 直接遍历的是key  kwargs以字典的形式保存
     # for k in kwargs:
     #     sum+=kwargs[k]
 
     for arg in args + tuple(kwargs.values()):
-        sum+=arg
+        sum += arg
     print(sum)
 
-foo(4,5,start=5,c=10,d=20)
+
+foo(4, 5, start=5, c=10, d=20)
