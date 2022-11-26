@@ -20,4 +20,3 @@ g = -100
 print(abs(g))
 
 print(int(f))
-

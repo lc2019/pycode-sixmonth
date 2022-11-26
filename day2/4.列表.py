@@ -12,7 +12,7 @@ print(names)
 # 列表表常用的方法
 #   增加
 x = ['zhangsan']
-names.extend(x)
+names.extend(x)  # 列表的元素添加到列表
 print(names)
 names.append("2020")
 print(names)

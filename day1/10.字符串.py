@@ -20,7 +20,7 @@ print(x.find('a'))
 print(x.index('a'))
 
 # 查找不到元素
-#print(x.index('x')) # 异常
+# print(x.index('x')) # 异常
 print(x.find('x'))  # -1
 print(x.rfind('a'))  # 最后一次出现的下标
 
