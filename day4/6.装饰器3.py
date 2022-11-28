@@ -1,4 +1,18 @@
 # 被装饰的函数有参数
+def can_play(clock):
+    def handler_action(fn):
+        pass
+
+    return handler_action
+
+
+@can_play(21)
+def play_game(name, game):
+    print(name + 'playing...' + game)
+
+
+# play_game('lc', 'dota2')
+print(play_game)
 
 def can_play(clock):
     def handless_action(fn):

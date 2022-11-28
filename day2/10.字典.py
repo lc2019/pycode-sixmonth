@@ -1,3 +1,7 @@
+# 有序字典
+d = {'a':1,'d':2,'c':3}
+print(d)
+
 # 字典{} 键值对出现  k-->v
 per = {'leichao': 18, 'lulu': 18, '2020': 'kaishi'}
 hope = {'2022': 19}
@@ -17,7 +21,7 @@ print(per)
 per.update(hope)
 print(per)
 
-# 删除 随机
+# 删除 随机 popiterm
 print(per.pop('2020'))
 del per['lulu']
 per.popitem()  # 删除最后一个键值对

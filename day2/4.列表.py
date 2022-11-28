@@ -1,5 +1,5 @@
 # []列表，元素直接使用，分割 有序
-names = ['zhangsan', 'lisi', 18, 29]
+names = ['zhangsan', 'lisi', 18, 29,18]
 
 # list 可迭代对象转化成列表，列表是有序的
 name = list(names)
@@ -21,6 +21,7 @@ print(names)
 
 names += ['2019']
 print(names)
+
 # 删除 pop remove clear
 # pop弹出最后1个数据
 print(names.pop())  # 返回最后1个数据

@@ -18,6 +18,27 @@ filename = '2020.03.28-x.mp4'
 print(filename.rpartition('.'))
 
 # join
-print('-'.join(s1))
-print(('*'.join('hello')))
+print('-'.join(s1)) # zhangsan-lisi-wangwu-zhaoliu
+print(('*'.join('hello'))) # h*e*l*l*o
 print('+'.join(('yes', 'ok')))
+
+"""
+判断字符串
+ startswith
+ endswith
+ isupper
+ islower
+ isdigit
+ isalpha
+ isalnum
+ issapce
+"""
+
+print('abs123'.isalnum()) # True 字母和数字
+print('abs123'.isdigit()) # 纯数字
+print('abs123'.isalpha()) # 纯字母
+
+
+# 转换字符串
+print('abs123'.upper())
+print('Abs123'.lower())

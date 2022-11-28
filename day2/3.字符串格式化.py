@@ -10,6 +10,7 @@ print('my name is %s age is %d' % (name, age))
 # %f表示浮点数的占位符
 # 2 format函数
 x = '大家好，我是{},年龄{}'.format('zhangsan', 18)
+print(f' name is {name} age is {age} ')
 print(x)
 
 # 3 列表 *

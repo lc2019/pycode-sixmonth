@@ -1,9 +1,9 @@
 # 无序 不重复的 {} set
 per = {'name': 'lc'}  # 字典
 x = {10, 2, 3, 4, 'lc', 4}  # 集合
-print(x)  # 集合去重
+print(x)  # 字典去重
 
-# set的操作 增加
+# set的操作
 x.add('2020')
 print(x)
 
