@@ -14,6 +14,7 @@ class Person(object):
     def __del__(self):
         del self.name
 
+
 c1 = Person('lc', 18)
 
 print(c1)
