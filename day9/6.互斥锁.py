@@ -1,7 +1,7 @@
 import threading
 import time
 
-metax_lock= threading.Lock()
+metax_lock = threading.Lock()
 sum = 0
 
 

@@ -1,0 +1,36 @@
+Index: day9/4.线程共享变量.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- day9/4.线程共享变量.py	(revision 2cd90d3c8bc877aa580cfb1534417bc1f7d54379)
++++ day9/4.线程共享变量.py	(date 1670679004309)
+@@ -1,0 +1,28 @@
++# 线程的共享变量
++import time
++import threading
++
++my_list = []
++
++
++def write_date():
++    for i in range(5):
++        my_list.append(i)
++        time.sleep(0.1)
++    print('write_data:', my_list)
++
++
++def read_data():
++    print('read_data', my_list)
++
++
++if __name__ == '__main__':
++    wthd = threading.Thread(target=write_date)
++
++    rthd = threading.Thread(target=read_data)
++
++    wthd.start()
++
++    wthd.join()
++    print('开始读取数据。。。')
++    rthd.start()
