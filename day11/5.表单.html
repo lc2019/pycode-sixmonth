@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表单</title>
+</head>
+<body>
+<!--form表单手机用户数据-->
+<form>
+    <p>
+        <!--    定义表单元素的文字标签-->
+        <label>user:</label>
+        <!--    文本狂-->
+        <input type="text">
+        <label>pass:</label>
+        <input type="text">
+    </p>
+    <p>
+        <label>sex:</label>
+        <!--        单选-->
+        <input type="radio">male
+        <input type="radio">female
+    </p>
+    <!--    复选狂-->
+    <p>
+        <label>skill:</label>
+        <input type="checkbox">py
+        <input type="checkbox">go
+        <input type="checkbox">shell
+    </p>
+    <!--        文件-->
+    <p>
+        <label>file:</label>
+        <input type="file">
+    </p>
+<!--    下拉框-->
+    <p>
+        <label>address:</label>
+        <select>
+            <option>bj</option>
+            <option>sh</option>
+            <option>tm</option>
+            <option>xa</option>
+        </select>
+    </p>
+<!--        文本框-->
+    <p>
+        <label>beizhu:</label>
+        <textarea></textarea>
+    </p>
+<!--    提交按钮-->
+    <p>
+        <input type="submit" value="register">
+        <input type="reset" value="reset">
+        <input type="button" value="ok" onclick="alert('ok')">
+    </p>
+</form>
+</body>
+</html>
