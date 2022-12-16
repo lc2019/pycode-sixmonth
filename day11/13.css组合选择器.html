@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>css选择器</title>
+    <style>
+
+
+        *[class] {
+            /*所有有class的标签*/
+            color: blue;
+        }
+
+        *[class^='e'] {
+            /*所有有class的标签*/
+            color: red;
+        }
+
+        *[class$='q'] {
+            /*所有有class的标签*/
+            font-weight: bold;
+        }
+                *[class*='a'] {
+            /*所有有class的标签*/
+            font-weight: bold;
+        }
+
+        a[href="http://www.baidu.com"] {
+            font-size: 32px;
+        }
+    </style>
+</head>
+
+<body>
+<p class="aq">lc</p>
+<span class="etime">2017</span>
+<div class="timex">huiyi</div>
+<p id="love">ll</p>
+<span class="time">2020</span>
+<a href="http://www.baidu.com">baidu</a>
+<a href="http://www.qq.com" class="aa">qq</a>
+<a href="http://www.sina.com">sina</a>
+</body>
+
+</html>

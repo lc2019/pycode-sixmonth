@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>选择器优先级</title>
+    <!--!important> 行内>id>类>标签选择器>通配符>大于继承 -->
+    <style>
+        * {
+            /* 通配符 */
+            color: red;
+        }
+
+        p {
+            /*  */
+            color: yellow;
+        }
+
+        .one {
+            /* class */
+            color: chartreuse !important;
+        }
+
+        #one {
+            /* id */
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <p class="one" id="one" style="color: palevioletred;">hello html5 world</p>
+</body>
+<div id="two">
+    <span>haha spans</span>
+</div>
+</html>

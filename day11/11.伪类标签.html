@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>伪类</title>
+    <style>
+        ul:first-child {
+            color: yellow;
+        }
+
+        /*span变*/
+        span:first-child {
+            color: green;
+        }
+
+        /*第一个变 优先级高于ul*/
+        li:first-child {
+            color: red;
+        }
+
+        /*指定行   */
+        li:nth-child(3) {
+            color: blue;
+        }
+
+        /*偶数even odd奇数*/
+        li:nth-child(odd) {
+            font-size: 20px;
+        }
+
+
+        li:last-child {
+            font-size: 25px;
+        }
+    </style>
+</head>
+<body>
+<!--ul>(li>a[href="https://www.baidu.com"]{baidu$})*10-->
+<ul>
+    <li><a href="https://www.baidu.com">baidu1</a></li>
+    <li><a href="https://www.baidu.com">baidu2</a></li>
+    <li><a href="https://www.baidu.com">baidu3</a></li>
+    <li><a href="https://www.baidu.com">baidu4</a></li>
+    <li><a href="https://www.baidu.com">baidu5</a></li>
+    <li><a href="https://www.baidu.com">baidu6</a></li>
+    <li><a href="https://www.baidu.com">baidu7</a></li>
+    <li><a href="https://www.baidu.com">baidu8</a></li>
+    <li><a href="https://www.baidu.com">baidu9</a></li>
+    <li><a href="https://www.baidu.com">baidu10</a></li>
+</ul>
+</body>
+<div>
+    <ul>
+        <li><span href="https://www.baidu.com">baidu1</span></li>
+        <li><span href="https://www.baidu.com">baidu2</span></li>
+        <li><span href="https://www.baidu.com">baidu3</span></li>
+        <li><span href="https://www.baidu.com">baidu4</span></li>
+        <li><span href="https://www.baidu.com">baidu5</span></li>
+    </ul>
+
+    <ul>
+        <li><span href="https://www.baidu.com">baidu6</span></li>
+        <li><span href="https://www.baidu.com">baidu7</span></li>
+        <li><span href="https://www.baidu.com">baidu8</span></li>
+        <li><span href="https://www.baidu.com">baidu9</span></li>
+        <li><span href="https://www.baidu.com">baidu10</span></li>
+    </ul>
+</div>
+</html>

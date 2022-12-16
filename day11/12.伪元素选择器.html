@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>伪元素</title>
+    <!--    伪元素 不属于任何标签-->
+    <style>
+
+        .father::before {
+            width: 50px;
+            height: 50px;
+            background-color: darkblue;
+            display: block;
+            content: "";
+        }
+
+        .father::after {
+            width: 10px;
+            height: 10px;
+            background-color: purple;
+            display: block;
+            content: "";
+        }
+
+        .father {
+            width: 200px;
+            height: 600px;
+            background-color: green;
+        }
+
+        .sub1 {
+            width: 100px;
+            height: 100px;
+            background-color: yellow;
+        }
+
+        .sub2 {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+<div class="father">
+    <div class="sub1"></div>
+    <div class="sub2"></div>
+</div>
+</body>
+
+</html>
