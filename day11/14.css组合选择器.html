@@ -3,44 +3,67 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>css选择器</title>
+    <title>css组合选择器</title>
     <style>
-
-
-        *[class] {
-            /*所有有class的标签*/
-            color: blue;
-        }
-
-        *[class^='e'] {
-            /*所有有class的标签*/
-            color: red;
-        }
-
-        *[class$='q'] {
-            /*所有有class的标签*/
-            font-weight: bold;
-        }
-                *[class*='a'] {
-            /*所有有class的标签*/
-            font-weight: bold;
-        }
-
-        a[href="http://www.baidu.com"] {
+        /*  子元素选择,使用>连接*/
+        div > ul > li > a {
             font-size: 32px;
+        }
+
+        /*后代选择起 使用空格连接*/
+        div a {
+            background-color: red;
+        }
+
+        .father {
+            width: 100px;
+            height: 100px;
+            background-color: green;
+        }
+
+        .sub1, .sub2 {
+            width: 50px;
+            height: 50px;
+        }
+
+        .sub1 {
+            background-color: yellow;
+        }
+
+        .sub2 {
+            background-color: yellowgreen;
+        }
+        /*交集选择器 p且是u1的类名*/
+        p.u1 {
+            font-size: 32px;
+        }
+        p > .x {
+            background-color: greenyellow;
         }
     </style>
 </head>
 
 <body>
-<p class="aq">lc</p>
-<span class="etime">2017</span>
-<div class="timex">huiyi</div>
-<p id="love">ll</p>
-<span class="time">2020</span>
-<a href="http://www.baidu.com">baidu</a>
-<a href="http://www.qq.com" class="aa">qq</a>
-<a href="http://www.sina.com">sina</a>
+<div>
+    <a href="#">ul outside</a>
+    <ul>
+        <li><a href="#">我是1个a</a></li>
+        <li><a href="#">我是2个a</a></li>
+        <li><a href="#">我是3个a</a></li>
+        <li><a href="#">我是4个a</a></li>
+        <li><a href="#">我是5个a</a></li>
+    </ul>
+</div>
+<a href="#">div outside</a>
+<!--类选择器-->
+<div class="father">
+    <div class="sub1"></div>
+    <div class="sub2"></div>
+</div>
+<!--交替选择器-->
+<p class="u1">this is p</p>
+<p>this is <span class="x">hehe</span>p2</p>
+<span class="u1"> this is span</span>
 </body>
 
 </html>
